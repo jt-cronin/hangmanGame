@@ -2,10 +2,16 @@ require "CSV"
 require "pry"
 require_relative 'functions.rb'
 
-
+intro()
 list = makeFirstList()
 
-wordChosen = pickWord(list)
+wordChosen = pickWord(list).chars.join
 
-puts wordChosen
+lettersGuess = hideWord(wordChosen)
+
+winLose = gamePlay(wordChosen, lettersGuess)
+
+winLoseMessage(winLose, wordChosen)
+
+
 

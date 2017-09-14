@@ -18,3 +18,16 @@ describe "tests to sort out words" do
 	end
 end
 
+describe "reports the end of game message" do
+	it "tells you if you win or lose" do 
+		a = true
+		b = false
+		c = "CONGRATS"
+
+		aa = winLoseMessage(a,c)
+		bb = winLoseMessage(b,c)
+
+		expect(aa).to eq()
+		expect(bb).to eq()
+	end
+end
